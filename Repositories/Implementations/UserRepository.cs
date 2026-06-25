@@ -13,16 +13,19 @@ namespace CrystalPalace.Repositories.Implementations
             Users.Add(user);
             return user.Id;
         }
+
         public User GetUser(Guid id)
         {
             var user = Users.FirstOrDefault(x => x.Id == id);
             return user;
         }
+
         public User GetUserByEmailAndPassword(string email, string password)
         {
             var user = Users.FirstOrDefault(x => x.Email == email && x.Password == password);
             return user;
         }
+
         public Guid UpdateUser(User user)
         {
             var userDetails = Users.FirstOrDefault(x => x.Id == user.Id);
@@ -34,6 +37,5 @@ namespace CrystalPalace.Repositories.Implementations
             Users.Add(user);
             return user.Id;
         }
-
     }
 }

@@ -7,7 +7,9 @@ IUserRepository userRepository = new UserRepository();
 
 IUserService userService = new UserService(userRepository);
 
-Console.WriteLine("------------------Welcome to crystal palace, Where Your needs are satisfied--------------");
+Console.WriteLine(
+    "------------------Welcome to crystal palace, Where Your needs are satisfied--------------"
+);
 
 while (true)
 {
@@ -43,4 +45,3 @@ while (true)
             break;
     }
 }
-
