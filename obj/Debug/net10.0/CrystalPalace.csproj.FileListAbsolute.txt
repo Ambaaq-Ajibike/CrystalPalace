@@ -1,0 +1,14 @@
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\bin\Debug\net10.0\CrystalPalace.exe
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\bin\Debug\net10.0\CrystalPalace.deps.json
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\bin\Debug\net10.0\CrystalPalace.runtimeconfig.json
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\bin\Debug\net10.0\CrystalPalace.dll
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\bin\Debug\net10.0\CrystalPalace.pdb
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\CrystalPalace.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\CrystalPalace.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\CrystalPalace.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\CrystalPalace.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\CrystalPalace.dll
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\refint\CrystalPalace.dll
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\CrystalPalace.pdb
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\CrystalPalace.genruntimeconfig.cache
+C:\Users\ADMIN\Desktop\classes\CrystalPalace\CrystalPalace\obj\Debug\net10.0\ref\CrystalPalace.dll
