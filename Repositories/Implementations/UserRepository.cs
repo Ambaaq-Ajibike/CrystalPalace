@@ -26,7 +26,7 @@ namespace CrystalPalace.Repositories.Implementations
         public Guid UpdateUser(User user)
         {
             var userDetails = Users.FirstOrDefault(x => x.Id == user.Id);
-            if (userDetails != null)
+            if (userDetails == null)
             {
                 throw new NotFoundException("User not found");
             }
