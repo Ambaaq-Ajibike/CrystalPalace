@@ -44,3 +44,36 @@ while (true)
     }
 }
 
+// IPaymentRepository paymentRepository = new PaymentRepository();
+// IPaymentService paymentService = new PaymentService(paymentRepository);
+
+// Console.Write("Tenant: ");
+// string tenant = Console.ReadLine();
+
+// Console.Write("Apartment: ");
+// string apartment = Console.ReadLine();
+
+// Console.Write("Payment Type (Rental/Visitation): ");
+// string paymentType = Console.ReadLine();
+
+// Console.Write("Payment Type Id: ");
+// string paymentTypeId = Console.ReadLine();
+
+// Payment payment = new Payment(
+//     tenant,
+//     apartment,
+//     paymentType,
+//     paymentTypeId
+// );
+
+// paymentService.CreatePayment(payment);
+
+// Console.WriteLine("\nAll Payments");
+
+// foreach (var item in paymentService.GetAllPayments())
+// {
+//     Console.WriteLine($"Tenant: {item.Tenant}");
+//     Console.WriteLine($"Apartment: {item.Apartment}");
+//     Console.WriteLine($"Payment Type: {item.PaymentType}");
+//     Console.WriteLine($"Payment Type Id: {item.PaymentTypeId}")
+// }
