@@ -11,22 +11,18 @@ namespace CrystalPalace.Repositories.Implementations
     {
         public static List<Visitation> Visitations = [];
 
-        public Guid BookVisitation(Guid tenantId, Guid apartmentId)
+        public Guid BookVisitation(Guid userId, Guid apartmentId)
         {
-            var visitation = new Visitation(tenantId, apartmentId);
-
-            visitation.Payment = 10000;
-            visitation.DateVisited = DateTime.Now;
-            visitation.Status = false;
+            var visitation = new Visitation(userId, apartmentId);
 
             Visitations.Add(visitation);
 
-            return visitation.Id;
+            return visitation.VisitationId;
         }
 
         public bool CompleteVisitation(Guid visitationId)
         {
-            var visitation = Visitations.FirstOrDefault(x => x.Id == visitationId);
+            var visitation = Visitations.FirstOrDefault(x => x.VisitationId == visitationId);
 
             if (visitation == null)
             {
