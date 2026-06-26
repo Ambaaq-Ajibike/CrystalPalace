@@ -11,9 +11,9 @@ namespace CrystalPalace.Repositories.Implementations
     {
         public static List<Visitation> Visitations = [];
 
-        public Guid BookVisitation(Guid userId, Guid apartmentId)
+        public Guid BookVisitation(Guid tenantId, Guid apartmentId, Guid paymentId)
         {
-            var visitation = new Visitation(userId, apartmentId);
+            var visitation = new Visitation(tenantId, apartmentId, paymentId);
 
             Visitations.Add(visitation);
 

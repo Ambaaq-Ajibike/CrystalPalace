@@ -18,5 +18,10 @@ namespace CrystalPalace.Services.Implementations
             _userRepository.AddUser(user);
             return "User Created Successfully";
         }
+
+        public User GetUserByEmailAndPassword(string email, string password)
+        {
+            return _userRepository.GetUserByEmailAndPassword(email, password);
+        }
     }
 }

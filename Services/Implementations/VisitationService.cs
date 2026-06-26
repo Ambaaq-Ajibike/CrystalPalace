@@ -9,9 +9,9 @@ namespace CrystalPalace.Services.Implementations
 {
     public class VisitationService(IVisitationRepository _visitationRepository) : IVisitationService
     {
-        public Guid BookVisitation(Guid userId, Guid apartmentId)
+        public Guid BookVisitation(Guid userId, Guid apartmentId, Guid paymentId)
         {
-            return _visitationRepository.BookVisitation(userId, apartmentId);
+            return _visitationRepository.BookVisitation(userId, apartmentId, paymentId);
         }
 
         public bool CompleteVisitation(Guid visitationId)
