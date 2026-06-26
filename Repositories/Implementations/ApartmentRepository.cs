@@ -6,25 +6,26 @@ namespace CrystalPalace.Repositories.Implementations
 {
     public class ApartmentRepository : IApartmentRepository
     {
-        public static List<Apartment> Apartments = [];
+        public static List<Apartment> Apartments = [
+        ];
         public Guid AddApartment(Apartment apartment)
         {
             Apartments.Add(apartment);
-            return apartment.ApartmentId;
+            return apartment.Id;
         }
 
-        Apartment GetApartmentById(Guid id)
+        public Apartment GetApartmentById(Guid id)
         {
-            var apartment = Apartments.FirstOrDefault(x => x.ApartmentId == id);
+            var apartment = Apartments.FirstOrDefault(x => x.Id == id);
             return apartment;
         }
 
-        public void UpdateApartment(Apartment apartment)
+        public Guid UpdateApartment(Apartment apartment)
         {
             if (apartment == null)
                 throw new ArgumentNullException(nameof(apartment));
 
-            var existingApartment = Apartments.FirstOrDefault(a => a.ApartmentId == apartment.ApartmentId);
+            var existingApartment = Apartments.FirstOrDefault(a => a.Id == apartment.Id);
             if (existingApartment == null)
             {
                 throw new Exception("Apartment not found.");
@@ -36,27 +37,28 @@ namespace CrystalPalace.Repositories.Implementations
             existingApartment.Address = apartment.Address;
             existingApartment.Utilities = apartment.Utilities;
             existingApartment.Description = apartment.Description;
+            return existingApartment.Id;
         }
 
-        List<Apartment> GetApartmentsByAgentId(Guid agentId)
+        public List<Apartment> GetApartmentsByAgentId(Guid agentId)
         {
             var apartments = Apartments.Where(x => x.AgentId == agentId).ToList();
             return apartments;
         }
 
-        List<Apartment> GetAll()
+        public List<Apartment> GetAll()
         {
             return Apartments;
         }
 
-        void DeleteApartment(Guid id)
+        public void DeleteApartment(Guid id)
         {
-            var apartment = Apartments.FirstOrDefault(x => x.ApartmentId == id);
+            var apartment = Apartments.FirstOrDefault(x => x.Id == id);
             if (apartment == null)
             {
                 throw new NotFoundException("Apartment not found");
             }
-            Apartments.RemoveAll(x => x.ApartmentId == id);
+            Apartments.RemoveAll(x => x.Id == id);
         }
 
     }

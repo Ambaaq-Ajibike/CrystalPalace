@@ -8,7 +8,7 @@ namespace CrystalPalace.Repositories.Interfaces
 {
     public interface IVisitationRepository
     {
-        Guid BookVisitation(Guid userId, Guid apartmentId, Guid paymentId);
-        bool CompleteVisitation(Guid visitationId);
+        string BookVisitation(Guid userId, Guid apartmentId, Guid paymentId);
+        bool CompleteVisitation(string visitationId);
     }
 }

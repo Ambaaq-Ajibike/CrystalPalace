@@ -13,8 +13,8 @@ namespace CrystalPalace.Entities
         public Guid PaymentId;
         public decimal Payment;
         public DateTime DateVisited;
-        public bool Status;
-
+        public VisitationStatus Status;
+        public string Code;
         public Visitation(Guid userId, Guid apartmentId, Guid paymentId)
         {
             VisitationId = Guid.NewGuid();
@@ -22,8 +22,10 @@ namespace CrystalPalace.Entities
             ApartmentId = apartmentId;
             Payment = 10000;
             DateVisited = DateTime.Now;
-            Status = false;
+            Status = VisitationStatus.JustBooked;
             PaymentId = paymentId;
+            Random random = new();
+            Code = $"CPV-{random.Next(10000, 99999)}";
         }
     }
 }

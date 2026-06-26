@@ -6,10 +6,10 @@ namespace CrystalPalace.Services.Implementations
 {
     public class UserService(IUserRepository _userRepository) : IUserService
     {
-        public string Login(string email, string password)
+        public BaseResponse<Guid> Login(string email, string password)
         {
             var user = _userRepository.GetUserByEmailAndPassword(email, password);
-            return user == null ? "User not found" : "Login successful";
+            return user == null ? new BaseResponse<Guid>("User not found", false, Guid.Empty) : new BaseResponse<Guid>("Login successful", true, user.Id);
         }
 
         public string Register(string firstName, string lastName, string email, string password, string phone)

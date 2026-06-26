@@ -10,7 +10,7 @@ namespace CrystalPalace.Repositories.Interfaces
     {
         Guid AddTenant(Tenant tenant);
         Tenant GetTenant(Guid id);
-        Guid UpdateTenat(Tenant tenant);
+        Guid UpdateTenant(Tenant tenant);
         Tenant GetTenantByEmailAndPassword(string email, string password);
     }
 }

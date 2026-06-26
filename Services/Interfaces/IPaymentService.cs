@@ -7,7 +7,7 @@ namespace CrystalPalace.Services.Interfaces
 {
     public interface IPaymentService
     {
-        void CreatePayment(Payment payment);
+        void MakePayment(Payment payment);
         List<Payment> GetAllPayments();
     }
 }

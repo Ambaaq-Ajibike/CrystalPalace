@@ -2,7 +2,7 @@ namespace CrystalPalace.Entities
 {
     public class Apartment
     {
-        public Guid ApartmentId;
+        public Guid Id;
         public Guid AgentId;
         public string Name;
         public decimal Price;
@@ -22,7 +22,7 @@ namespace CrystalPalace.Entities
             Address? address,
             string description)
         {
-            ApartmentId = Guid.NewGuid();
+            Id = Guid.NewGuid();
             AgentId = agentId;
             Name = name;
             Price = price;

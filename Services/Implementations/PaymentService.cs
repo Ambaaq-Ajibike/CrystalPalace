@@ -16,7 +16,7 @@ namespace CrystalPalace.Services.Implementations
             _paymentRepository = paymentRepository;
         }
 
-        public void CreatePayment(Payment payment)
+        public void MakePayment(Payment payment)
         {
             _paymentRepository.AddPayment(payment);
         }

@@ -9,6 +9,7 @@ namespace CrystalPalace.Services.Implementations
     {
         public Guid AddApartment(Apartment apartment)
         {
+            
             return apartmentRepository.AddApartment(apartment);
         }
 
