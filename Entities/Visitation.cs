@@ -10,6 +10,7 @@ namespace CrystalPalace.Entities
         public Guid Id;
         public Guid TenantId;
         public Guid ApartmentId;
+        public Guid PaymentId;
         public decimal Payment;
         public DateTime DateVisited;
         public bool Status;

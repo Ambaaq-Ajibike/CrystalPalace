@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using CrystalPalace.Entities;
 using CrystalPalace.Exceptions;
+using CrystalPalace.Repositories.Interfaces;
 
 namespace CrystalPalace.Repositories.Implementations
 {
-    public class TenantRepository
+    public class TenantRepository : ITenantRepository
     {
         public static List<Tenant> Tenants = [];
 

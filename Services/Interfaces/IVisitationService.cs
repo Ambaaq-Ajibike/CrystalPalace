@@ -7,7 +7,7 @@ namespace CrystalPalace.Services.Interfaces
 {
     public interface IVisitationService
     {
-        Guid BookVisitation(Guid tenantId, Guid apartmentId);
+        Guid BookVisitation(Guid tenantId, Guid apartmentId, Guid paymentId);
         bool CompleteVisitation(Guid visitationId);
     }
 }

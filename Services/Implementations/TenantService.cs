@@ -26,7 +26,7 @@ namespace CrystalPalace.Services.Implementations
         {
             var tenant = new Tenant(firstName, lastName, email, password, phone);
             _tenantRepository.AddTenant(tenant);
-            return "Tenant Created Successfully";
+            return "Tenant created sucessfully.";
         }
     }
 }
