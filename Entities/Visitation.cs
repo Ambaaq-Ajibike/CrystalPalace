@@ -7,21 +7,21 @@ namespace CrystalPalace.Entities
 {
     public class Visitation
     {
-        public Guid Id;
-        public Guid TenantId;
+        public Guid VisitationId;
+        public Guid UserId;
         public Guid ApartmentId;
         public decimal Payment;
         public DateTime DateVisited;
         public bool Status;
 
-        public Visitation(Guid tenantId, Guid apartmentId)
+        public Visitation(Guid userId, Guid apartmentId)
         {
-            Id = Guid.NewGuid();
-            TenantId = tenantId;
+            VisitationId = Guid.NewGuid();
+            UserId = userId;
             ApartmentId = apartmentId;
             Payment = 10000;
-            Status = false;
             DateVisited = DateTime.Now;
+            Status = false;
         }
     }
 }

@@ -7,7 +7,8 @@ namespace CrystalPalace.Entities
 {
     public class Tenant : User
     {
-        
+        public Guid TenantId;
+
         public Tenant(
             string firstname,
             string lastname,
@@ -17,12 +18,7 @@ namespace CrystalPalace.Entities
         )
             : base(firstname, lastname, email, password, phoneNumber)
         {
-            Id = Guid.NewGuid();
-            Firstname = firstname;
-            Lastname = lastname;
-            Email = email;
-            Password = password;
-            PhoneNumber = phoneNumber;
+            TenantId = Guid.NewGuid();
         }
     }
 }
