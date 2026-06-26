@@ -15,7 +15,7 @@ namespace CrystalPalace.Entities
         public DateTime DateVisited;
         public bool Status;
 
-        public Visitation(Guid tenantId, Guid apartmentId)
+        public Visitation(Guid tenantId, Guid apartmentId, Guid paymentId)
         {
             Id = Guid.NewGuid();
             TenantId = tenantId;
@@ -23,6 +23,7 @@ namespace CrystalPalace.Entities
             Payment = 10000;
             Status = false;
             DateVisited = DateTime.Now;
+            PaymentId = paymentId;
         }
     }
 }

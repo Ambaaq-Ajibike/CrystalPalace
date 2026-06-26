@@ -13,10 +13,7 @@ namespace CrystalPalace.Repositories.Implementations
 
         public Guid BookVisitation(Guid tenantId, Guid apartmentId, Guid paymentId)
         {
-            var visitation = new Visitation(tenantId, apartmentId)
-            {
-                PaymentId = paymentId
-            };
+            var visitation = new Visitation(tenantId, apartmentId, paymentId);
 
             Visitations.Add(visitation);
 
