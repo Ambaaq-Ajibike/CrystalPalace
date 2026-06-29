@@ -10,5 +10,6 @@ namespace CrystalPalace.Services.Interfaces
         List<Apartment> GetApartmentsByAgentId(Guid agentId);
         List<Apartment> GetAll();
         void DeleteApartment(Guid id);
+        void GetApartmentDetails(Guid id, string name, decimal price, double? longitude, double? latitude, Address? address, Dictionary<string, int> utilities, List<string> images, List<string> videos, string description);
     }
 }

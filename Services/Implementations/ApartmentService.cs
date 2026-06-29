@@ -42,5 +42,10 @@ namespace CrystalPalace.Services.Implementations
         {
             apartmentRepository.DeleteApartment(id);
         }
+
+        public void GetApartmentDetails(Guid id, string name, decimal price, double? longitude, double? latitude, Address? address, Dictionary<string, int> utilities, List<string> images, List<string> videos, string description)
+        {
+            apartmentRepository.GetApartmentDetails(id, name, price, longitude, latitude, address, utilities, images, videos, description);
+        }
     }
 }

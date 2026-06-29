@@ -12,7 +12,7 @@ namespace CrystalPalace.Entities
         public Dictionary<string, int> Utilities;
         public string Description;
         public List<string> Images;
-
+        public List<string> Videos;
         public Apartment(
             Guid agentId,
             string name,
@@ -32,6 +32,7 @@ namespace CrystalPalace.Entities
             Description = description;
             Utilities = new Dictionary<string, int>();
             Images = new List<string>();
+            Videos = new List<string>();
 
             if (Address == null && (Latitude == null || Longitude == null))
             {
